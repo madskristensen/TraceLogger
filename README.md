@@ -1,7 +1,6 @@
 # Debug Trace Logger
 
-<!-- Replace this badge with your own-->
-[![Build status](https://ci.appveyor.com/api/projects/status/hv6uyc059rqbc6fj?svg=true)](https://ci.appveyor.com/project/madskristensen/extensibilitytools)
+[![Build status](https://ci.appveyor.com/api/projects/status/ch99lvy3lnrcy9mj?svg=true)](https://ci.appveyor.com/project/madskristensen/tracelogger)
 
 <!-- Update the VS Gallery link after you upload the VSIX-->
 Download this extension from the [VS Gallery](https://visualstudiogallery.msdn.microsoft.com/[GuidFromGallery])
@@ -15,6 +14,8 @@ See the [change log](CHANGELOG.md) for changes and road map.
 
 ## Output Window
 Any call to `System.Diagnostics.Debug.Write` and `System.Diagnostics.Trace.Write` will be shown in a custom output window pane.
+
+![Output window](art/output-window.png)
 
 This makes it easy to diagnose the extension running in Visual Studio.
 

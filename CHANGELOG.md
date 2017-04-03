@@ -14,3 +14,4 @@ on the official Visual Studio extension gallery.
 ## 1.0
 
 - [x] Initial release
+- [x] Custom Output Window pane

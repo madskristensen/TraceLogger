@@ -4,6 +4,9 @@
         <Identity Id="a299a65a-dcf1-4271-96ca-4fd4c4f80b90" Version="1.0" Language="en-US" Publisher="Mads Kristensen" />
         <DisplayName>Debug Trace Logger</DisplayName>
         <Description xml:space="preserve">Allows Visual Studio extension authors to easily see any debug and trace statements in a custom Output Window pane.</Description>
+        <MoreInfo>https://github.com/madskristensen/TraceLogger</MoreInfo>
+        <License>Resources\LICENSE</License>
+        <ReleaseNotes>https://github.com/madskristensen/TraceLogger/blob/master/CHANGELOG.md</ReleaseNotes>
         <Icon>Resources\icon.png</Icon>
         <PreviewImage>Resources\icon.png</PreviewImage>
         <Tags>debug, trace, logging, diagnostics</Tags>

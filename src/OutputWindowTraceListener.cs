@@ -37,8 +37,9 @@ namespace TraceLogger
             {
                 if (EnsurePane())
                 {
-                    ThreadHelper.Generic.BeginInvoke(DispatcherPriority.ApplicationIdle, () =>
+                    ThreadHelper.JoinableTaskFactory.Run(async delegate
                     {
+                        await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
                         pane.OutputString(message);
                     });
                 }

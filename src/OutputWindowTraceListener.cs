@@ -1,6 +1,8 @@
-﻿using Microsoft.VisualStudio.Shell.Interop;
+﻿using Microsoft.VisualStudio.Shell;
+using Microsoft.VisualStudio.Shell.Interop;
 using System;
 using System.Diagnostics;
+using System.Windows.Threading;
 
 namespace TraceLogger
 {
@@ -35,8 +37,10 @@ namespace TraceLogger
             {
                 if (EnsurePane())
                 {
-                    pane.OutputString(message);
-
+                    ThreadHelper.Generic.BeginInvoke(DispatcherPriority.ApplicationIdle, () =>
+                    {
+                        pane.OutputString(message);
+                    });
                 }
             }
             catch (Exception)

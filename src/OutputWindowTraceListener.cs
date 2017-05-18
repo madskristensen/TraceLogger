@@ -39,15 +39,8 @@ namespace TraceLogger
                 {
                     ThreadHelper.JoinableTaskFactory.RunAsync(async delegate
                     {
-                        try
-                        {
-                            await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
-                            pane.OutputString(message);
-                        }
-                        catch (Exception)
-                        {
-                            // Do nothing
-                        }
+                        await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
+                        pane.OutputString(message);
                     });
                 }
             }
